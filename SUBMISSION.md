@@ -65,10 +65,10 @@ The frontend is built without frameworks to maximize performance.
 *(Note: If submitting via Google Docs, replace the placeholders below with actual screenshots of your running application).*
 
 **1. Storefront & Product Catalog:**
-> *[Insert screenshot of index.html showing products]*
+![Storefront](docs/images/storefront.png)
 
-**2. Shopping Cart & Checkout:**
-> *[Insert screenshot of cart.html showing items ready for checkout]*
+**2. Authentication & Login:**
+![Login Page](docs/images/login.png)
 
 **3. Admin Dashboard:**
-> *[Insert screenshot of admin.html showing the order management table]*
+![Admin Dashboard](docs/images/admin.png)
