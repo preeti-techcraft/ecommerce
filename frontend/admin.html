@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce | Admin Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar glass-panel">
+        <div class="nav-brand"><a href="index.html" style="color: inherit;">ShopElite Admin</a></div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-item">Storefront</a>
+            <a href="#" class="btn btn-danger" id="nav-auth">Logout</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1>Admin Dashboard</h1>
+        <p style="color: var(--text-secondary); margin-bottom: 2rem;">Manage orders and store settings.</p>
+        
+        <div id="alert-box" class="alert"></div>
+
+        <div class="glass-panel" style="padding: 2rem;">
+            <h2>Recent Orders</h2>
+            <div style="overflow-x: auto; margin-top: 1.5rem;">
+                <table style="width: 100%; border-collapse: collapse; text-align: left;">
+                    <thead>
+                        <tr style="border-bottom: 2px solid var(--glass-border);">
+                            <th style="padding: 1rem;">Order ID</th>
+                            <th style="padding: 1rem;">Date</th>
+                            <th style="padding: 1rem;">Customer</th>
+                            <th style="padding: 1rem;">Total</th>
+                            <th style="padding: 1rem;">Status</th>
+                            <th style="padding: 1rem;">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="orders-table-body">
+                        <tr>
+                            <td colspan="6" style="padding: 1rem; text-align: center; color: var(--text-secondary);">Loading orders...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/api.js?v=2"></script>
+    <script src="js/admin.js?v=2"></script>
+</body>
+</html>

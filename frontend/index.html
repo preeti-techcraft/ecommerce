@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce | Premium Products</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar glass-panel">
+        <div class="nav-brand">ShopElite</div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-item">Catalog</a>
+            <a href="cart.html" class="nav-item" id="nav-cart">Cart (0)</a>
+            <a href="login.html" class="btn btn-primary" id="nav-auth">Login</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1>Our Premium Collection</h1>
+        <p style="color: var(--text-secondary); margin-bottom: 1rem;">Discover state-of-the-art products.</p>
+        
+        <!-- Search and Filter Bar -->
+        <div class="search-bar glass-panel" style="padding: 1.5rem; margin-bottom: 2rem; display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+            <input type="text" id="search-name" class="form-control" placeholder="Search products by name..." style="flex: 2; min-width: 200px;">
+            <input type="number" id="search-min" class="form-control" placeholder="Min $" style="flex: 1; min-width: 100px;">
+            <input type="number" id="search-max" class="form-control" placeholder="Max $" style="flex: 1; min-width: 100px;">
+            <button id="search-btn" class="btn btn-primary" style="flex: 1; min-width: 100px;">Filter</button>
+            <button id="clear-btn" class="btn btn-danger" style="flex: 1; min-width: 100px;">Clear</button>
+        </div>
+
+        <div id="alert-box" class="alert"></div>
+
+        <div class="product-grid" id="product-grid">
+            <!-- Products will be dynamically injected here -->
+            <p style="color: var(--text-secondary);">Loading products...</p>
+        </div>
+    </main>
+
+    <script src="js/api.js?v=2"></script>
+    <script src="js/main.js?v=2"></script>
+</body>
+</html>

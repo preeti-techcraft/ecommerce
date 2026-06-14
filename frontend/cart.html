@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce | Shopping Cart</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar glass-panel">
+        <div class="nav-brand"><a href="index.html" style="color: inherit;">ShopElite</a></div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-item">Catalog</a>
+            <a href="login.html" class="btn btn-primary" id="nav-auth">Login</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1>Your Shopping Cart</h1>
+        <div id="cart-alert" class="alert"></div>
+
+        <div id="cart-content">
+            <!-- Cart items injected here -->
+        </div>
+    </main>
+
+    <script src="js/api.js?v=4"></script>
+    <script src="js/cart.js?v=4"></script>
+</body>
+</html>
